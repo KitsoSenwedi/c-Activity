@@ -1,4 +1,4 @@
-# c-Activity
+ c#-Activity
 
 In the U.S coin system, the penny is the basic coin, and it is equal to cent, a nickel is equivalent to 5 cents, a dime is equivalent to 10 cents, a quarter is equivalent to 25 cents, and half-dollar is equivalent to 50 cents. Design and implement a program that would make use of the functions shown below. Each function has a single int formal parameter Amount. 
 a)	HalfDollars (): Compute the maximum number of half-dollars that could be used in making change for Amount.   
