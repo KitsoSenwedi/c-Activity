@@ -1,0 +1,105 @@
+using System;
+
+namespace classwork_assignment
+{
+    
+        public class MoneyCalc
+        {
+            public int Amount;
+
+            //Number 1
+            public void Half_Dollar()
+            {
+                double hd = 2;
+                double hdOutput = Amount / hd;
+
+                Console.WriteLine("The maximum number of half dollars for " + Amount + " is: " + hdOutput);
+            }
+
+            //Number 2
+            public void Quater()
+            {
+                double q = 4;
+                double qOutput = Amount * q;
+
+                Console.WriteLine("The maximum number of Quaters for " + Amount + " is: " + qOutput);
+            }
+
+            //Number 3
+            public void Dimes()
+            {
+                double d = 10;
+                double dOutput = Amount * d;
+
+                Console.WriteLine("The maximum number of Dimes for " + Amount + " is: " + dOutput);
+            }
+
+            //Number 4
+            public void Nickles()
+            {
+                double n = 5;
+                double nOutput = Amount * n;
+
+                Console.WriteLine("The maximum number of Nickles for " + Amount + " is: " + nOutput);
+            }
+        }
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                
+                Console.WriteLine("Please enter an amount to calculate:");
+                string userAmount = Console.ReadLine();
+                int amount = Int32.Parse(userAmount);
+
+                
+                Console.WriteLine("");
+                Console.WriteLine("Please choose what you want to calculate you amount to (Select the number):");
+                Console.WriteLine("1. Half Dollar");
+                Console.WriteLine("2. Quater");
+                Console.WriteLine("3. Dime");
+                Console.WriteLine("4. Nickel");
+
+                
+
+                int choice = Int32.Parse(Console.ReadLine());
+
+                if (choice == 1)
+                {
+                    MoneyCalc moneycalc = new MoneyCalc();
+                    moneycalc.Amount = amount;
+
+                    moneycalc.Half_Dollar();
+                }
+                else if (choice == 2)
+                {
+                    MoneyCalc moneycalc = new MoneyCalc();
+                    moneycalc.Amount = amount;
+
+                    moneycalc.Quater();
+                }
+                else if (choice == 3)
+                {
+                    MoneyCalc moneycalc = new MoneyCalc();
+                    moneycalc.Amount = amount;
+
+                    moneycalc.Dimes();
+                }
+                else if (choice == 4)
+                {
+                    MoneyCalc moneycalc = new MoneyCalc();
+                    moneycalc.Amount = amount;
+
+                    moneycalc.Nickles();
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Option");
+                }
+
+
+            }
+        }
+    
+}
